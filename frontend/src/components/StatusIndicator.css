@@ -1,0 +1,71 @@
+.status-indicator {
+  display: flex;
+  gap: 1rem;
+}
+
+.status-box {
+  flex: 1;
+  padding: 1rem;
+  border-radius: 8px;
+  text-align: center;
+  transition: all 0.3s ease;
+  border: 2px solid #e5e7eb;
+}
+
+.passed-box {
+  background-color: #f9fafb;
+  color: #374151;
+}
+
+.failed-box {
+  background-color: #f9fafb;
+  color: #374151;
+}
+
+.status-label {
+  font-size: 0.875rem;
+  font-weight: 600;
+  margin-bottom: 0.5rem;
+}
+
+.status-count {
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+/* Blinking animations */
+.blink-green {
+  animation: blink-green 1s infinite;
+  background-color: #10b981 !important;
+  color: white !important;
+  border-color: #10b981 !important;
+}
+
+.blink-red {
+  animation: blink-red 1s infinite;
+  background-color: #ef4444 !important;
+  color: white !important;
+  border-color: #ef4444 !important;
+}
+
+@keyframes blink-green {
+  0%, 50% { 
+    background-color: #10b981; 
+    border-color: #10b981;
+  }
+  50%, 100% { 
+    background-color: #059669; 
+    border-color: #059669;
+  }
+}
+
+@keyframes blink-red {
+  0%, 50% { 
+    background-color: #ef4444; 
+    border-color: #ef4444;
+  }
+  50%, 100% { 
+    background-color: #dc2626; 
+    border-color: #dc2626;
+  }
+}
