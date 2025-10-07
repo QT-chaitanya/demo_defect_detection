@@ -2,6 +2,9 @@
 
 A real-time silicone defect detection application with React frontend and Flask backend, powered by YOLOv8 deep learning model.
 
+<img width="1853" height="1014" alt="image" src="https://github.com/user-attachments/assets/9dc3a823-9957-4766-a6cf-0535fbb14f60" />
+
+
 ## 🎯 Features
 
 - **Real-time Defect Detection**: Process silicone tube images with trained YOLOv8 model
